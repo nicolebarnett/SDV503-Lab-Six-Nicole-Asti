@@ -9,14 +9,5 @@ function likeTally(obj) { //declare function
             return obj.likes - obj.dislikes; //return the object key likes value minus the object key dislikes value.
     };
 }; console.log(likeTally({ likes: 12, dislikes: 15, })); //print to console the calculated object value (-3)
-// function likeTally(obj) {
-//     let arr = [];
-//     for (var prop in obj) {
-//         if (obj.hasOwnProperty(prop)) {
-//             arr.push((obj[prop]))
-//         }
-//     }
-//     let total = (`${arr[0] - arr[1]}`)
-//     return total
-// }
+
 
