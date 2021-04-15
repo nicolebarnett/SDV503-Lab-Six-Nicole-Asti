@@ -26,5 +26,15 @@ function sorter(y) { //declare function
 console.log(sorter(['gju',3,'68']))
 
 
+/* Create a function that tallys the sum of an objects values
+14/04 (edit 15/04, dot notation)
+Asti Maera */
+
+function likeTally(obj) { //declare function
+    for (var prop in obj) { //for variable found in obj parameter
+        if (obj.hasOwnProperty(prop)) //if the object has properties
+            return obj.likes - obj.dislikes; //return the object key likes value minus the object key dislikes value.
+    };
+}; console.log(likeTally({ likes: 12, dislikes: 15, })); //print to console the calculated object value (-3)
 
 
